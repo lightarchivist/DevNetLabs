@@ -16,8 +16,12 @@ hostFile = open ('ipListOfNodes','r')
 hostList = hostFile.readlines()
 hostFile.close()
 
-mypass = getpass()  // operators/admin password 
-adpass = getpass()  // password for a new local user
+
+# admin password
+mypass = getpass()
+
+# new password for the new local user 
+adpass = getpass() 
 
 # adjust aaa settings and save
 for device in hostList:
@@ -28,7 +32,7 @@ for device in hostList:
         "device_type": "huawei",
 		}
  net_connect = Netmiko(**huawei)
- output = net_connect.send_config_from_file("change_file.txt") // change file contain new local user configuration
+ output = net_connect.send_config_from_file("change_file.txt") 
  print(output)
  net_connect.disconnect()
 
