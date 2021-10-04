@@ -1,6 +1,6 @@
+#!/usr/bin/env python
+""" parse json """
 import json
-
-json_data = open ('data.json', r)
-data = json.load(json_data)
-json_data.close()
-print(data) 
+with open("data.json", "r") as file:
+    jdata = file.read()
+alldata = json.load(jdata)
