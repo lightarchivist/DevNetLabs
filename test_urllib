@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+"""urllib3 module test"""
+import urllib3
+http = urllib3.PoolManager()
+URL = 'http://dub-ne.blogspot.com'
+resp = http.request('GET', URL)
+print(resp.status)
