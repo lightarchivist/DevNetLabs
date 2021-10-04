@@ -1,0 +1,14 @@
+{
+ “device”:
+{
+“hostname”: ”Edge1”
+{
+“interface”:
+{
+“name”: “Ethernet0”
+“description”: “L2 Uplink”
+“enabled”: true,
+}
+}
+}
+}
