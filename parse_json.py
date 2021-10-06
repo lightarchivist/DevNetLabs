@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-""" parse json """
+# parse json script
 import json
 with open("data.json", "r") as file:
-    print(json.load(file.read()))
+    data = json.load(file)
+    print(data)
