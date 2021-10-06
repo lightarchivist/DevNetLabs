@@ -1,14 +1,7 @@
-{
- “device”:
-{
-“hostname”: ”Edge1”
-{
-“interface”:
-{
-“name”: “Ethernet0”
-“description”: “L2 Uplink”
-“enabled”: true,
-}
-}
-}
-}
+{ "node": 
+  { "hostname": "Edge1", "details": { "interface":
+   { "name": "Ethernet0", "description": "L2 Uplink", "enabled": "true"
+   }
+                                    }
+  }
+  }

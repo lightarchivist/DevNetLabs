@@ -2,7 +2,7 @@
     "user1": {
         "type": admin,
         "privilage": full
-        }
+        },
     "user2":{
         "type": helpdesk
         "privilage": read;
