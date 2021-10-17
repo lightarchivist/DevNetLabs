@@ -1,0 +1,8 @@
+---
+device:
+    hostname: Edge1
+    interface:
+        name:Ethernet0
+        description:Uplink
+        enabled:true
+...
